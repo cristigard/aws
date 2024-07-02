@@ -1,3 +1,4 @@
+#https://docs.aws.amazon.com/ebs/latest/userguide/ebs-using-volumes.html
 #attach volume to instance
 1.create volume in EC2 Volumes
 2.on new created volume Action/Attach Volume -> select instance
