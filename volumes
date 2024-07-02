@@ -1,0 +1,13 @@
+#attach volume to instance
+1.create volume in EC2 Volumes
+2.on new created volume Action/Attach Volume -> select instance
+3. mounting volume on instance
+Operation 1: Formatting the EBS Volume
+Command: sudo mkfs -t ext4 /dev/xvdbb
+Description: This operation formats (mkfs) the newly attached EBS volume (/dev/xvdbb) with the ext4 filesystem type (-t ext4).
+Operation 2: Creating a Mount Point
+Command: sudo mkdir /mnt/myvolume
+Description: This operation creates a directory (mkdir) named myvolume under the /mnt directory (/mnt/myvolume). This directory will serve as the mount point for the EBS volume.
+Operation 3: Mounting the EBS Volume
+Command: sudo mount /dev/xvdbb /mnt/myvolume
+Description: This operation mounts (mount) the formatted EBS volume (/dev/xvdbb) onto the previously created mount point (/mnt/myvolume
